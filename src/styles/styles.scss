@@ -1,0 +1,86 @@
+@import "header";
+@import "introduce";
+@import "advantages";
+@import "faq";
+@import "banner";
+@import "footer";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+
+
+}
+
+.main {
+  padding-top: 100px;
+
+  &__wrapper {
+    background: var(--Primary-10, #FFFCFB);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media(max-width: 812px) {
+      padding: 50px 40px;
+    }
+
+    @media(max-width: 425px) {
+      padding: 50px 20px;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  height: 54px;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px 50px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &--orange {
+    width: 166px;
+    background: var(--Primary-100, #FC552F);
+    color: #fff;
+  }
+
+  &--transparent {
+    border-radius: 15px 50px;
+    border: 1.5px solid var(--white-100, #FFF);
+    background-color: transparent;
+    color: white
+  }
+}
