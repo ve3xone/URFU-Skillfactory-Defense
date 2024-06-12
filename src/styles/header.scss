@@ -1,29 +1,68 @@
 .header {
-  max-width: 1000px;
-  padding: 24px;
-  margin: 0 auto;
   display: flex;
+  width: auto;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: 20px 100px;
+  gap: 10px;
+  background: #FFFFFF;
 
+  //tablet mode
+  @media(max-width: 810px) {
+    padding: 20px 40px;
+  }
+
+  //mob mode
+  @media(max-width: 390px) {
+    padding: 20px;
+  }
+  
   &__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
     color: var(--Primary-100, #FC552F);
     font-size: 28px;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    @media(max-width: 812px) {
+    
+    //tablet mode
+    @media(max-width: 810px) {
       font-size: 18px;
+      line-height: 27px;
+      padding: 0px;
+      gap: 0px;
+    }
+    
+    //mob mode
+    @media(max-width: 390px) {
+      font-size: 18px;
+      line-height: 27px;
+      padding: 10px 10px 10px 0px;
+      gap: 10px;
     }
   }
 
   &__list {
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 
-    @media(max-width: 605px) {
+    @media(max-width: 810px) {
+      padding: 0px;
+      gap: 20px;
+    }
+
+    @media(max-width: 390px) {
       display: none;
       position: absolute;
       top: 90px;
@@ -42,6 +81,13 @@
   }
 
   &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 99px;
     color: var(--Black-50, #6E727E);
     text-align: center;
     font-size: 18px;
@@ -49,31 +95,36 @@
     line-height: normal;
     text-decoration: none;
 
-    &:hover {
-      opacity: 0.7;
+    @media(max-width: 810px) {
+      padding: 0px;
+      font-size: 14px;
+      line-height: 21px;
     }
 
-    @media(max-width: 810px) {
-      font-size: 14px;
+    &:hover {
+      opacity: 0.7;
     }
   }
 
   &__btn {
+
     &-mobile {
       display: none;
-      height: 38px;
-      width: 28px;
+      height: 28px;
+      width: 38px;
       background: url("../img/burger.svg") no-repeat center;
-    }
 
-    @media(max-width: 605px) {
-      display: none !important;
-    }
-
-    &-mobile {
-      @media(max-width: 605px) {
-        display: block;
+      @media(max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
       }
+    }
+
+    @media(max-width: 390px) {
+      display: none !important;
     }
   }
 }
