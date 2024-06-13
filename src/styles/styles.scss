@@ -1,9 +1,9 @@
 @import "header";
-@import "introduce";
 @import "advantages";
 @import "faq";
 @import "banner";
 @import "footer";
+@import "index";
 
 .visually-hidden {
   position: absolute;
@@ -34,13 +34,9 @@ body {
   margin: 0;
   list-style: none;
   border: none;
-
-
 }
 
 .main {
-  padding-top: 100px;
-
   &__wrapper {
     background: var(--Primary-10, #FFFCFB);
     padding: 50px;
@@ -60,11 +56,14 @@ body {
 
 .btn {
   display: flex;
+  font-family: 'DM Sans';
   height: 54px;
-  padding: 16px 20px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 16px 20px;
   gap: 10px;
+  
   border-radius: 15px 50px;
 
   &:hover {
@@ -73,14 +72,37 @@ body {
 
   &--orange {
     width: 166px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    border-radius: 15px 50px;
     background: var(--Primary-100, #FC552F);
     color: #fff;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
   }
-
+  
   &--transparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    border: 1.5px solid #FC552F;
     border-radius: 15px 50px;
-    border: 1.5px solid var(--white-100, #FFF);
     background-color: transparent;
-    color: white
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FC552F;
   }
 }
