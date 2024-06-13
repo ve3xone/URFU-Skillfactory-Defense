@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "install": "npm audit fix --force",
+    "start": "npx gulp"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "browser-sync": "^2.27.10",
@@ -14,5 +18,11 @@
     "gulp-webp": "^4.0.1",
     "sass": "^1.55.0"
   },
-  "type": "module"
+  "type": "module",
+  "author": "Vladislav Startsev (ve3xone)",
+  "license": "GPL-3.0-only",
+  "name": "urfu-skillfactory-defense",
+  "version": "1.0.0",
+  "description": "Проект защиты в урфу скиллфактори",
+  "main": "gulpfile.js"
 }
