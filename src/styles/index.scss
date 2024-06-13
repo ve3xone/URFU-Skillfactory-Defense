@@ -37,7 +37,7 @@ button {
     background: #ffffff;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,7 +79,7 @@ button {
     position: relative;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +108,7 @@ button {
     position: relative;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,9 +128,9 @@ button {
   align-self: stretch;
   gap: 30px;
   position: relative;
-  @media (max-width: 390px) {
-    left: 19.5px;
-  }
+  //@media (max-width: 390px) {
+    //left: 19.5px;
+  //}
 }
 .simplify-your-work {
   display: flex;
@@ -155,8 +155,8 @@ button {
     align-self: stretch;
     //flex-shrink: 0;
     position: relative;
-    width: 732px;
-    height: 114px;
+    //width: 732px;
+    //height: 114px;
     color: #07070c;
     font-family: Poppins, var(--default-font-family);
     font-size: 38px;
@@ -167,15 +167,15 @@ button {
     overflow: hidden;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     align-self: stretch;
     //flex-shrink: 0;
     position: relative;
-    width: 350px;
-    height: 84px;
+    //width: 350px;
+    //height: 84px;
     color: #07070c;
     font-family: Poppins, var(--default-font-family);
     font-size: 28px;
@@ -210,8 +210,8 @@ button {
     align-self: stretch;
     //flex-shrink: 0;
     position: relative;
-    width: 732px;
-    height: 54px;
+    //width: 732px;
+    //height: 54px;
     color: #b3b3ba;
     font-family: Poppins, var(--default-font-family);
     font-size: 18px;
@@ -221,15 +221,15 @@ button {
     opacity: 0.8;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     align-self: stretch;
     //flex-shrink: 0;
     position: relative;
-    width: 350px;
-    height: 63px;
+    //width: 350px;
+    //height: 63px;
     color: #b3b3ba;
     font-family: Poppins, var(--default-font-family);
     font-size: 14px;
@@ -257,7 +257,7 @@ button {
     width: 408px;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,7 +461,7 @@ button {
   left: 0;
 
   //mob mode
-  @media (max-width: 530px) {
+  @media (max-width: 390px) {
     flex-shrink: 0;
     position: relative;
     width: 233.892px;
